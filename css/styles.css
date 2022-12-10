@@ -359,12 +359,14 @@ ol {
 .icon-logo:hover,
 .icon-logo:focus {
   fill: var(--brand-color);
+  cursor: pointer;
 }
 .join-us a svg use {
   fill: var(--brand-color);
 }
 .our-clients-icon:hover rect {
   stroke: var(--brand-color);
+  cursor: pointer;
 }
 .our-clients-icon {
   fill: transparent;
@@ -378,6 +380,7 @@ ol {
 .our-clients-logo:hover use,
 .our-clients-logo:focus use {
   fill: var(--brand-color);
+  cursor: pointer;
 }
 
 .navigation-icons {
