@@ -67,6 +67,8 @@ button:focus {
   text-decoration: none;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .logo,
 .logo a:visited {
@@ -212,9 +214,13 @@ button:focus {
 .main-header-styling {
   padding-top: 200px;
   padding-bottom: 200px;
-  background: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%),
+  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 100%, rgba(47, 48, 58, 0.4) 100%),
     url(../images/Background-image.jpg);
   max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-header-styling h1 {
   margin-top: 0;
@@ -228,7 +234,7 @@ button:focus {
 }
 .description-styling li h3 {
   margin: 0;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .description-styling li p {
   margin-top: 10px;
@@ -325,19 +331,29 @@ ol {
 .social-links {
   display: flex;
   gap: 10px;
-  padding: 16px 32px 0px 32px;
+  margin-top: 16px;
+  justify-content: center;
+}
+.social-links li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.social-media-icons {
+  fill: #afb1b8;
+}
+.social-media-highlight:hover,
+.social-media-highlight:hover use,
+.social-media-highlight:focus,
+.social-media-highlight:focus use {
+  fill: var(--main-site-background-color);
+  background-color: var(--brand-color);
 }
 
-.our-clients {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-.our-clients h2 {
-  padding-bottom: 50px;
-}
 .icon-circle {
   fill: transparent;
 }
@@ -364,35 +380,31 @@ ol {
 .join-us a svg use {
   fill: var(--brand-color);
 }
-.our-clients-icon:hover rect {
-  stroke: var(--brand-color);
-  cursor: pointer;
-}
+
 .our-clients-icon {
   fill: transparent;
 }
-.our-clients-icon rect {
-  stroke: #afb1b8;
-}
+
 .our-clients-logo use {
   fill: #afb1b8;
 }
 .our-clients-logo:hover use,
-.our-clients-logo:focus use {
+.our-clients-logo:focus use,
+.blue-highlight:focus,
+.blue-highlight:hover {
   fill: var(--brand-color);
   cursor: pointer;
+  border-color: var(--brand-color);
 }
 
 .navigation-icons {
   fill: #757575;
 }
-.telephone:hover,
-.telephone:focus {
-  fill: var(--brand-color);
+.mail-link svg {
+  margin-right: 10px;
 }
-.mail-link:hover,
-.mail-link:focus {
-  fill: var(--brand-color);
+.telephone svg {
+  margin-right: 10px;
 }
 .social-links-bottom {
   display: flex;
@@ -408,16 +420,55 @@ ol {
   display: flex;
   gap: 70px;
 }
-.footer-socials {
+.gray-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border: 1px solid var(--element-background-color);
+  background-color: var(--element-background-color);
+  border-radius: 4px;
+}
+.our-clients-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.our-clients {
   display: flex;
 }
-.footer-socials .icon-circle {
-  fill: var(--secondary-text-color);
+.our-clients li {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-socials .social-icons use {
+.social-links-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  justify-content: center;
+}
+.social-links-footer li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.social-links-footer use {
   fill: var(--main-site-background-color);
 }
-.footer-socials .icon-circle:hover,
-.footer-socials .icon-circle:focus {
-  fill: var(--brand-color);
+.social-media-highlight-footer:hover,
+.social-media-highlight-footer:focus {
+  background-color: var(--brand-color);
 }
