@@ -29,13 +29,13 @@
         </nav>
         <div class="nav-contact-info navigation-icons">
           <a class="contact-info mail-link" href="mailto:info@devstudio.com"
-            ><svg width="16px" height="12px">
+            ><svg width="16px" height="12px" fill="currentColor">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a
           >
           <a class="contact-info telephone" href="tel:+48111111111"
-            ><svg width="10px" height="16px">
+            ><svg width="10px" height="16px" fill="currentColor">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111</a
@@ -55,16 +55,11 @@
           <h2 class="visually-hidden">Nasze atuty</h2>
           <ul class="list">
             <li>
-              <svg width="270px" height="120px">
-                <rect width="270px" height="120px" fill="#f5f4fa" rx="4"></rect>
-                <use
-                  href="./images/icons.svg#icon-antenna-1"
-                  height="70px"
-                  width="70px"
-                  x="100"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="gray-box">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-antenna-1" height="70px" width="70px"></use>
+                </svg>
+              </div>
               <h3 class="text-header">LOREM IPSUM</h3>
               <p class="description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -72,16 +67,11 @@
               </p>
             </li>
             <li>
-              <svg width="270px" height="120px">
-                <rect width="270px" height="120px" fill="#f5f4fa" rx="4"></rect>
-                <use
-                  href="./images/icons.svg#icon-clock-1"
-                  height="70px"
-                  width="70px"
-                  x="100"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="gray-box">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-clock-1" height="70px" width="70px"></use>
+                </svg>
+              </div>
               <h3 class="text-header">LOREM IPSUM</h3>
               <p class="description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -89,16 +79,11 @@
               </p>
             </li>
             <li>
-              <svg width="270px" height="120px">
-                <rect width="270px" height="120px" fill="#f5f4fa" rx="4"></rect>
-                <use
-                  href="./images/icons.svg#icon-diagram-1"
-                  height="70px"
-                  width="70px"
-                  x="100"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="gray-box">
+                <svg width="70" height="70px">
+                  <use href="./images/icons.svg#icon-diagram-1" height="70px" width="70px"></use>
+                </svg>
+              </div>
               <h3 class="text-header">LOREM IPSUM</h3>
               <p class="description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -106,16 +91,11 @@
               </p>
             </li>
             <li>
-              <svg width="270px" height="120px">
-                <rect width="270px" height="120px" fill="#f5f4fa" rx="4"></rect>
-                <use
-                  href="./images/icons.svg#icon-astronaut-1"
-                  height="70px"
-                  width="70px"
-                  x="100"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="gray-box">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons.svg#icon-astronaut-1" height="70px" width="70px"></use>
+                </svg>
+              </div>
               <h3 class="text-header">LOREM IPSUM</h3>
               <p class="description-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -160,63 +140,44 @@
               <div class="image-text-padding">
                 <h3>John Doe</h3>
                 <p class="job-description">Product Designer</p>
-                <div class="social-links">
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                <ul class="social-links">
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-instagram-2"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-twitter-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-facebook-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-linkedin-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -224,61 +185,44 @@
               <div class="image-text-padding">
                 <h3>John Doe</h3>
                 <p class="job-description">Frontend Developer</p>
-                <div class="social-links">
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                <ul class="social-links">
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-instagram-2"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-twitter-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-facebook-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-linkedin-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -286,61 +230,44 @@
               <div class="image-text-padding">
                 <h3>John Doe</h3>
                 <p class="job-description">Marketing</p>
-                <div class="social-links">
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                <ul class="social-links">
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-instagram-2"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-twitter-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-facebook-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-linkedin-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -348,141 +275,86 @@
               <div class="image-text-padding">
                 <h3>John Doe</h3>
                 <p class="job-description">UI Designer</p>
-                <div class="social-links">
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-instagram-2"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-facebook-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use></svg
-                    ></a>
-                  </div>
-                  <div>
-                    <a href="#">
-                      <svg width="44px" height="44px" class="icon-circle social-icons">
-                        <circle r="22px" cx="22px" cy="22px" />
-                        <use
-                          href="./images/icons.svg#icon-linkedin-1"
-                          height="20px"
-                          width="20px"
-                          x="12px"
-                          y="12px"
-                        ></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                <ul class="social-links">
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-instagram-2"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-twitter-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-facebook-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-media-highlight">
+                    <svg width="20px" height="20px" class="social-media-icons">
+                      <use
+                        href="./images/icons.svg#icon-linkedin-1"
+                        height="20px"
+                        width="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="our-clients section">
+      <section class="section">
         <div class="container">
-          <h2>Nasi klienci</h2>
-          <ul class="list-styling">
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" fill="transparent" stroke="#AFB1B8" />
-                <use
-                  href="./images/icons.svg#icon-Logo1"
-                  width="106px"
-                  height="60px"
-                  x="32"
-                  y="17"
-                ></use>
+          <h2 class="our-clients-header">Nasi klienci</h2>
+          <ul class="list-styling our-clients">
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
+                <use href="./images/icons.svg#icon-Logo1" width="106px" height="60px"></use>
               </svg>
             </li>
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" />
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
                 <use
                   class="icon-logo"
                   href="./images/icons.svg#icon-Logo2"
                   width="106px"
                   height="60px"
-                  x="32"
-                  y="17"
                 ></use>
               </svg>
             </li>
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" />
-                <use
-                  href="./images/icons.svg#icon-Logo3"
-                  width="106px"
-                  height="60px"
-                  x="32"
-                  y="17"
-                ></use>
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
+                <use href="./images/icons.svg#icon-Logo3" width="106px" height="60px"></use>
               </svg>
             </li>
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" />
-                <use
-                  href="./images/icons.svg#icon-Logo4"
-                  width="106px"
-                  height="60px"
-                  x="32"
-                  y="17"
-                ></use>
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
+                <use href="./images/icons.svg#icon-Logo4" width="106px" height="60px"></use>
               </svg>
             </li>
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" />
-                <use
-                  href="./images/icons.svg#icon-Logo5"
-                  width="106px"
-                  height="60px"
-                  x="32"
-                  y="17"
-                ></use>
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
+                <use href="./images/icons.svg#icon-Logo5" width="106px" height="60px"></use>
               </svg>
             </li>
-            <li>
-              <svg width="170px" height="92px" class="our-clients-icon our-clients-logo">
-                <rect width="170px" height="92px" rx="4px" fill="transparent" stroke="#AFB1B8" />
-                <use
-                  href="./images/icons.svg#icon-Logo6"
-                  width="106px"
-                  height="60px"
-                  x="32"
-                  y="17"
-                ></use>
+            <li class="blue-highlight">
+              <svg width="106px" height="60px" class="our-clients-icon our-clients-logo">
+                <use href="./images/icons.svg#icon-Logo6" width="106px" height="60px"></use>
               </svg>
             </li>
           </ul>
@@ -517,61 +389,30 @@
           <section class="join-us">
             <div>
               <h3 class="join-us-text">DOŁĄCZ DO NAS</h3>
-              <ul class="social-links-bottom">
-                <li>
-                  <a href="#">
-                    <svg width="44px" height="44px" class="icon-circle social-icons">
-                      <circle r="22px" cx="22px" cy="22px" />
-                      <use
-                        href="./images/icons.svg#icon-instagram-2"
-                        height="20px"
-                        width="20px"
-                        x="12px"
-                        y="12px"
-                      ></use>
-                    </svg>
-                  </a>
+              <ul class="social-links-footer">
+                <li class="social-media-highlight-footer">
+                  <svg width="20px" height="20px" class="social-media-icons">
+                    <use
+                      href="./images/icons.svg#icon-instagram-2"
+                      height="20px"
+                      width="20px"
+                    ></use>
+                  </svg>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg width="44px" height="44px" class="icon-circle social-icons">
-                      <circle r="22px" cx="22px" cy="22px" />
-                      <use
-                        href="./images/icons.svg#icon-twitter-1"
-                        height="20px"
-                        width="20px"
-                        x="12px"
-                        y="12px"
-                      ></use>
-                    </svg>
-                  </a>
+                <li class="social-media-highlight-footer">
+                  <svg width="20px" height="20px" class="social-media-icons">
+                    <use href="./images/icons.svg#icon-twitter-1" height="20px" width="20px"></use>
+                  </svg>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg width="44px" height="44px" class="icon-circle social-icons">
-                      <circle r="22px" cx="22px" cy="22px" />
-                      <use
-                        href="./images/icons.svg#icon-facebook-1"
-                        height="20px"
-                        width="20px"
-                        x="12px"
-                        y="12px"
-                      ></use></svg
-                  ></a>
+                <li class="social-media-highlight-footer">
+                  <svg width="20px" height="20px" class="social-media-icons">
+                    <use href="./images/icons.svg#icon-facebook-1" height="20px" width="20px"></use>
+                  </svg>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg width="44px" height="44px" class="icon-circle social-icons">
-                      <circle r="22px" cx="22px" cy="22px" />
-                      <use
-                        href="./images/icons.svg#icon-linkedin-1"
-                        height="20px"
-                        width="20px"
-                        x="12px"
-                        y="12px"
-                      ></use>
-                    </svg>
-                  </a>
+                <li class="social-media-highlight-footer">
+                  <svg width="20px" height="20px" class="social-media-icons">
+                    <use href="./images/icons.svg#icon-linkedin-1" height="20px" width="20px"></use>
+                  </svg>
                 </li>
               </ul>
             </div>
