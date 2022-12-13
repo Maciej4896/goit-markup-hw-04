@@ -286,13 +286,6 @@ button:focus {
 .portfolio-list {
   flex-wrap: wrap;
 }
-.portfolio-highlight:hover,
-.portfolio-highlight:focus {
-  border-radius: 0px 0px 4px 4px;
-  background: #ffffff;
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
-  cursor: pointer;
-}
 .button-highlight:hover,
 .button-highlight:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -335,22 +328,14 @@ ol {
   justify-content: center;
 }
 .social-links li {
-  width: 44px;
-  height: 44px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: none;
 }
 .social-media-icons {
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.social-media-highlight:hover,
-.social-media-highlight:hover use,
-.social-media-highlight:focus,
-.social-media-highlight:focus use {
-  fill: var(--main-site-background-color);
+.link-decoration:focus,
+.link-decoration:hover {
+  color: var(--main-site-background-color);
   background-color: var(--brand-color);
 }
 
@@ -380,23 +365,6 @@ ol {
 .join-us a svg use {
   fill: var(--brand-color);
 }
-
-.our-clients-icon {
-  fill: transparent;
-}
-
-.our-clients-logo use {
-  fill: #afb1b8;
-}
-.our-clients-logo:hover use,
-.our-clients-logo:focus use,
-.blue-highlight:focus,
-.blue-highlight:hover {
-  fill: var(--brand-color);
-  cursor: pointer;
-  border-color: var(--brand-color);
-}
-
 .navigation-icons {
   fill: #757575;
 }
@@ -419,6 +387,7 @@ ol {
 .bottom-flex {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 .gray-box {
   display: flex;
@@ -441,14 +410,20 @@ ol {
 .our-clients {
   display: flex;
 }
-.our-clients li {
+.our-clients-links {
   height: 92px;
   width: 170px;
-  border: 1px solid #afb1b8;
+  border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
+  fill: currentColor;
+}
+.our-clients-links:hover,
+.our-clients-links:focus {
+  color: var(--brand-color);
 }
 .social-links-footer {
   display: flex;
@@ -464,11 +439,26 @@ ol {
   justify-content: center;
   align-items: center;
   box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.social-links-footer use {
-  fill: var(--main-site-background-color);
+.link-decoration {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
 }
-.social-media-highlight-footer:hover,
-.social-media-highlight-footer:focus {
-  background-color: var(--brand-color);
+.portfolio-link {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  cursor: pointer;
 }
